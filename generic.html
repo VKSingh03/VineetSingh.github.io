@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VineetSingh/Portfolio/ProjectDetails</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Vineet Singh</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li ><a href="index.html">Overview</a></li>
+						<li class="active"><a href="generic.html">Project Details</a></li>
+						<li><a href="photo_gallery.html">Photo Gallery</a></li>
+						<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/vineet-kumar-singh-341a68174/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<li><a href="https://github.com/VKSingh03" target="_blank"  class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<!-- <section class="post">
+								<header class="major">
+									<span class="date">April 25, 2017</span>
+									<h1>This is a<br />
+									Generic Page</h1>
+									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									amet nullam sed etiam veroeros.</p>
+								</header>
+								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+							</section> -->
+
+
+						<!-- Projects -->
+				<h2>Projects</h2>
+				<section>
+					
+					<article>
+						<header id="Kuka">
+							<span class="date">December 2022</span>
+							<h2>KUKA LBR iiwa R820 Robot Modeling<br />
+							</a></h2>
+						</header>
+						<p> In this project, a model based on KUKA LBR iiwa R820 is created in SOLIDWORKS and simulated using ROS Noetic and Gazebo</p>
+						<p><strong>SKILLS Used: </strong>SOLIDWORKS, Forward and Inverse Kinematics, system dynamics modeling</p>
+						<ul>
+							<li>A robot based on specification sheet of KUKA LBR iiwa R820 is designed in Solidworks with a custom designed end effector.</li>
+							<li>The model is converted to URDF and controllers are added for all the joints and a new URDF is generated using XACRO.</li>
+							<li>Algorithms for Forward and Inverse Kinematics is written from scratch using Python.</li>
+							<li>Publishers and Subscribers are written to appropriately control the robot.</li>
+							<li>Final simulation done in Gazebo where the robot picks up objects from one platform and places on another.</li>
+						</ul>
+						
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Kuka_robot_LBR_iiwa.git" target="_blank" class="button large">View Project</a></li>
+						</ul>
+					</article>
+					<article>
+						<header id="turtlebot_ros2">
+							<span class="date">December 2022</span>
+							<h2>Turtlebot control, TF transforms and Camera in ROS2<br />
+							</a></h2>
+						</header>
+						<p>In this project, a turtlebot model equipped with camera is used to read Aruco markers and go to multiple goals</p>
+						<p><strong>SKILLS Used: </strong>ROS2, C++, OOP, OpenCV</p>
+						<ul>
+							<li>This project is done using ROS2 Galactic, RIVZ and Gazebo.</li>
+							<li>A dynamic broadcaster is written to fully connect a disconnected TF tree.</li>
+							<li>Paramerets from YAML files are loaded in the ROS parameter server.</li>
+							<li>After reaching first goal, the robot is turned in position to read Aruco Marker using Camera (OpenCV Plugin) and, based on Aruco Id, go to a final goal position. </li>
+							<li>Publishers and Subscribers are written to know exact location of robot by reading appropriate topics.</li>
+							<li>Final simulation done in Gazebo with multiple goal locations to choose from.</li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Turtlebot-control-TF-transforms-and-Camera-in-ROS2" target="_blank"  class="button">View Project</a></li>
+							<li><a href="https://youtu.be/Wf4jgUjjwj8" target="_blank" class="button">Simulation Video</a></li>
+						</ul>
+					</article>
+					<article>
+						<header id="lqr_lqg">
+							<span class="date">December 2022</span>
+							<h2>LQR and LQG controller design for two pendulum gantry crane<br />
+							</a></h2>
+						</header>
+						<p>In this project, a detailed study of a given non-linear system is done and multiple control techniques are designed to control the system.</p>
+						<p><strong>SKILLS Learnt: </strong> Kalman Filter and its implementation, non linear system modeling, linearization of non linear systems, Euler Lagrange system dynamics</p>
+						<ul>
+							<li>This project is done in MATLAB, Simulink, and Python.</li>
+							<li>Euler Lagrange model for dynamic motion is derived for a double pendulum gantry crane.</li>
+							<li>The system is studied and linearized about the equilibrium points.</li>
+							<li>State space representation is derived from the linearized model.</li>
+							<li>Conditions under which the system is Controllable and Observable is studied.</li>
+							<li>LQR controller is designed and it's stability is studied using Lyapunov stability analysis.</li>
+							<li>Luenberger Observer is designed and studied for multiple output combinations available to observe.</li>
+							<li>Finally, and LQG controller is designed for the Linearized system and also tested on the original non linear model.</li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/LQR-and-LQG-controller-design" target="_blank" class="button">View Project</a></li>
+						</ul>
+					</article>
+					<article>
+						<header id="adaptive_control">
+							<span class="date">November 2022</span>
+							<h2>Adaptive Control of Time-Varying Parameter Systems With Asymptotic Tracking<br />
+							</a></h2>
+						</header>
+						<p>In this project, a control scheme is implemented for a nonlinear system with time varying uncertain parameters</p>
+						<p><strong>SKILLS Learnt: </strong>Adaptive Control techniques, Lyapunov Stability analysis, asymptotic tracking of systems</p>
+						<ul>
+							<li>This project is done in MATLAB and Simulink.</li>
+							<li>This project is an implementation of the latest work in Adaptive control of system and Asymptotic error tracking.</li>
+							<li>The system dynamic model with time varying uncertain parameters is studied and control technique is designed for the same.</li>
+							<li>The final simulation shows the asymptotic error tracking to the desired result.</li>
+							<li>The comparison is done with existing control scheme called Emod, and the comparison shows better tracking for proposed method.</li>
+			
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Adaptive-Control-of-Time-Varying-Parameter-Systems-With-Asymptotic-Tracking" target="_blank" class="button">View Project</a></li>
+						</ul>
+					</article>
+					<article>
+						<header id="toy_car">
+							<span class="date">October 2022</span>
+							<h2>Mobile Robot design and control using ROS<br />
+							</a></h2>
+						</header>
+						<p>In this project, a 4-wheel drive mobile robot is designed in SOLIDWORKS, and the robot is controlled using ROS Noetic and simulated in GAZEBO.</p>
+						<p><strong>SKILLS Used: </strong>SOLIDWORKS, ROS Noetic, Python, OOP</p>
+						<ul>
+							<li>A toy car model is designed in SOLIDWORKS, where all the wheels can be controlled independeptly.</li>
+							<li>The car model is then exported to URDF using URDF exporter plugin in SOLIDWORKS.</li>
+							<li>The URDF is modified to add a lidar and appropriate controllers for all the joints are also added. </li>
+							<li>A XACRO file created to integrate the LIDAR and controllers with the existing URDF to generate a new URDF file. </li>
+							<li>Launch file is created to spawn the robot in Gazebo in a modified world, and the model is tested with teleop operation. </li>
+							<li>Finally Publishers and Subscribers are written to follow a simple path in the arena. </li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/toy_car_project.git" target="_blank" class="button">View Project</a></li>
+							<li><a href="https://youtu.be/p3Kq7AhRVoQ" target="_blank" class="button">Simulation Video</a></li>
+						</ul>
+					</article>
+					<article>
+						<header id="sae">
+							<span class="date">April 2019</span>
+							<h2>SAE Aerodesign West 2019<br />
+							</a></h2>
+						</header>
+						<!-- <a href="generic.html" class="image fit"><img src="images/pic06.jpg" alt="" /></a> -->
+						<p>This project was done as a team by Team PHOENIX, the official Aeromodelling club of NIT Jamsedpur.</p>
+						<p><strong>SKILLS Learnt: </strong>Team management, leadership, sponsorship, teaching, aeromodelling, airflow analysis, SOLIDWORKS, ANSYS, XFLR5, MATLAB 3D graphs, fabrication (wood and aluminium), testing sequence design, control system design, troubleshooting failures, circuit design, BLDC and servo motor circuits, Radio Control design and operation.</p>
+
+						<ul>
+							<li>I was the Technical Head of Team PHOENIX for the year 2018-2019, and also for the SAE Aerodesign West 2019. </li>
+							<li>As Technical head, I led the complete calculations and design team, and the fabrication of the aircraft model.</li>
+							<li>We started with the Conceptual design based on Problem statement restrictions and requirements. I did the final conceptual model, and the form of wing design (backswept), tail design and fuselage mounting of wings. </li>
+							<li>Preliminary design and calculations was done to validate the design of the model. This was done iteratively until a good theoretical value of lift was achieved. I lead the preliminary calculations for lift and drag coefficients. </li>
+							<li>Then the detail design in CATIA was done by the design team members, and I did the material selection for each part of the plane, and started working on the electrical components specifications.</li>
+							<li>Electrical components was selected based on the lift requirements from the calculations, and ANSYS analysis of the model. I checked multiple motor and propellor combinations and selected the one with highest thrust with lowest current requirement.</li>
+							<li>Once the configuration was finalized for the complete aircraft, I started the fabrication with a team of 5 juniors under me. </li>
+							<li>Balsa wood is used for the complete body of the aircraft, except the fuselage which was made from Aluminium. </li>
+							<li>Once the fabrication is completed, we did a complete mounting of all the equipments, and used tennis balls to imitate humans in the aircraft, with steel plates as payload. </li>
+							<li>In the first flight test, the plane lifted the complete weight that we estimated from calculations, and flight round was successful. </li>
+							<li>At the final event in Van Nuys, we successfully completed 3 flight rounds, and we secured 9th rank globally amonst all the other teams. </li>
+							<li>We also secured 1st rank for our Design Report and approach to design the Aircraft, and the tools that we used to validate every result. </li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://youtu.be/hb3j3rEOt5o" target="_blank" class="button">SAE Flight video</a></li>
+							<li><a href="photo_gallery.html" target="_blank" class="button">Photo Gallary</a></li>
+						</ul> 
+					</article>
+					<article>
+						<header id="ojass">
+							<span class="date">April 2018</span>
+							<h2>Ojass 2018 at NIT Jamshedpur<br />
+							</a></h2>
+						</header>
+						<!-- <a href="generic.html" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+						<p>Ojass is the annual technical fest at NIT Jamshedpur, and my team participated in multiple robotics competition and secured positions in all the events as described below. </p>
+						<p><strong>SKILLS Learnt: </strong>Robot modeling, Arduino coding, sensor callibration, maze solving algorithms, controller design, wiring, fabrication</p>
+											
+
+
+						<h3>Bot-E-Maze: Autonomous Robot Competition</h3>
+						<ul>
+							<li>For this competition, an autonomous robot was supposed to follow a maze made up of black line and walls, and the robot should find the final goal.</li>
+							<li>We did the project using Arduino Uno, and used 5 IR sensors for detecting the lines and the walls that the robot should follow. </li>
+							<li>The inputs from all the IR sensors were used to design the Algorithm that can follow the line or wall. We used left wall follower algorithm for the wall follower.</li>
+							<li>The competition arena was a 2 floor arena, and our robot was able to complete the eitire competition, and <strong>we won 2nd position among the 75+ teams</strong> that participated.</li>
+						</ul>
+
+						<h3>Shape Shifter: A mobile robot with manipulator</h3>
+						<ul>
+							<li>For this competition, a mobile robot with a mounted arm should be used to complete the given tasks and reach a final goal.</li>
+							<li>We designed a four wheel drive robot, and designed a 4 DOF arm to be used to pickup and place objects. </li>
+							<li>The competition arena had balls, square boxes, inclined slopes and rotating floor as hurdles, and we were able to complete all the challanges. </li>
+							<li><strong>We won the event with 1st position among the 40+ teams</strong>  that participated in the event.</li>
+						</ul>
+						
+						<h3>Mac Fifa: Robot playing Football</h3>
+						<ul>
+							<li>For this competition, a mobile robot should be used to play the game of football/soccer.</li>
+							<li>We used our robot from the above event, and modified it to have more weight and a lower Centre of Mass. </li>
+							<li>We used variable voltage regulator for this event to have more control on the robot speed and motion, and we made a custom controller with DPDT switches to control the robot for this event. </li>
+							<li><strong>We won the event with 3rd position among the 90+ teams</strong>  that participated in the event.</li>
+							<li>We also participated in the similar event at a different Institute (RVS academy) where we had to use two robots, and there we won the event with 1st position among the 30+ teams that participated. </li>
+						</ul>
+
+						<ul class="actions special">
+							<li><a href="photo_gallery.html" target="_blank" class="button">Photo Gallary</a></li>
+						</ul>
+					</article>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>College Park<br />
+								Maryland, USA 20783</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="">(240) 921-7781</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="">vsingh03@umd.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/vineet-kumar-singh-341a68174/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="https://github.com/VKSingh03" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
