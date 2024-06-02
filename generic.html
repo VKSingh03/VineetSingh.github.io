@@ -11,6 +11,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Code to add the view project button at the end of list -->
+		<!-- <title>Project List</title>
+		<style>
+			.project-list {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			.project-list li {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+
+			.project-list li a.button {
+				text-decoration: none;
+				padding: 8px 16px;
+				background-color: #f5f9f6;
+				color: white;
+				border-radius: 4px;
+				transition: background-color 0.3s ease;
+			}
+
+			.project-list li a.button:hover {
+				background-color: #f6f5ef;
+			}
+		</style> -->
+
 	</head>
 	<body class="is-preload">
 
@@ -62,8 +92,109 @@
 				<section>
 					
 					<article>
+						<header id="3d_vision">
+							<span class="date">Sept - Dec 2023</span>
+							<h2>Projects in 3D Vision<br />
+							</a></h2>
+						</header>
+						<p> Multiple projects done in 3D vision including Single image to 3D, PointNet implementation, NeRF and Volume Rendering, and Neural Implicit based SLAM techniques.</p>
+						<p><strong>SKILLS Used: </strong>PyTorch, PyTorch3D, SLAM, Deep Learning, CNNs.</p>
+						<ul>
+							<li>
+								<span><strong>A comparative study of Neural Implicit Representation based SLAM techniques:</strong> Did a comparative study of five prominent neural SLAM methods—iMap, NICE-SLAM, Co-SLAM, Nerf SLAM, and vMAP— which were evaluated for computational efficiency and suitability for resource-constrained robots.</span>
+								<a href="project_reports/CMSC848F_Final_Project_Report Group10.pdf" target="_blank" class="button small">Project Report</a>
+							</li>
+							<li>
+								<span><strong>Single View Image to 3D:</strong> Designed a Neural network with an encoder and a decoder to understand the image, and then
+									predict the 3D shape as a voxel, mesh or point cloud.</span>
+								<a href="https://github.com/VKSingh03/Exploring-loss-functions-in-Pytorch3D" target="_blank" class="button small">View Project</a>
+							</li>
+							<li>
+								<span><strong>Volume Renderer:</strong> Implemented a NeRF model from scratch including the random point and ray sampling and the loss
+									function. Implemented an implicit volume as a Multi-Layer Perceptron (MLP) which mapped the 3D position to volume
+									density and color.</span>
+								<a href="https://github.com/VKSingh03/Volume-Rendering-and-NeRF" target="_blank" class="button small">View Project</a>
+							</li>
+							<li>
+								<span><strong>Point Net Implementation:</strong> Implemented the Point Net architecture for the classification and segmentation of point clouds.
+									Analyzed the robustness of the model by introducing rotations and changing the number of sampled points.</span>
+								<a href="https://github.com/VKSingh03/PointNet-implementation-" target="_blank" class="button small">View Project</a>
+							</li>
+						</ul>
+						
+						<!-- <ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Kuka_robot_LBR_iiwa.git" target="_blank" class="button large">View Project</a></li>
+						</ul> -->
+					</article>
+					<hr>
+					<article>
+						<header id="Valorant">
+							<span class="date">Nov - Dec 2023</span>
+							<h2><a href="https://ariac.readthedocs.io/en/latest/competition/terminology.html">Advancing Esports Analytics using CNN and LSTM<br />
+							</a></h2>
+						</header>
+						<p> Designed a CNN + LSTM Neural network to do live win prediction for the Valorant video game.</p>
+						<p><strong>SKILLS Used: </strong>Pytorch, Computer vision, CNN, LSTM</p>
+							<ul>
+								<li>Designed a deep learning approach to Valorant Match prediction using CNN and LSTM. CNNs analyze key in-game visual
+									elements while LSTMs understands the temporal patterns to predict the winner of a game round.</li>
+								<li>Created a new dataset from competition videos, as no previous dataset existed for the requirement.</li>	
+								<li>Achieved accuracy higher than previously possible. Project done in a group of 4 students as part of course work.</li>							
+							</ul>
+						
+						<ul class="actions special">
+							<li><a href="project_reports/Advancing_Esports_Analytics__A_Deep_Learning_Approach_to_Valorant_Match_Prediction_Using_CNN_and_LSTM.pdf" target="_blank" class="button large">Project Report</a></li>
+						</ul>
+					</article>
+					<hr>
+					<article>
+						<header id="ARIAC">
+							<span class="date">Jan - May 2023</span>
+							<h2><a href="https://ariac.readthedocs.io/en/latest/competition/terminology.html">ARIAC 2023<br />
+							</a></h2>
+						</header>
+						<p> Completed the ARIAC agility challenges for the annual competition organized by NIST.</p>
+						<p><strong>SKILLS Used: </strong>C++, ROS2, MoveIt, OOPs, Finite State Machines, Software control architecture, Knowledge representation.</p>
+						<div class="content">
+							<ul class="skills">
+								<li>Wrote the code for controlling the robots (MoveIt) and reading sensors data for monitoring the environment.</li>
+								<li>Implemented finite state machines to address the agility challenges of handling faulty parts, priority orders, flipped parts, faulty gripper, insufficient parts, and parts pickup from conveyor</li>
+								<li>The complete code is written in C++ and using OOPs, ROS2 and MoveIt.</li>
+							</ul>
+							<div class="image-scroller">
+								<div class="image-container">
+									<img src="images/ariac_image.png" alt="Image 1">
+								</div>
+							</div>
+						</div>
+						
+						<ul class="actions special">
+							<li><a href="project_reports/Group7_Final_Report.pdf" target="_blank" class="button large">View Report</a></li>
+							<li><a href="https://youtu.be/dmnHMJKD2i4" target="_blank" class="button large">View Simulation</a></li>
+						</ul>
+					</article>
+					<hr>
+					<article>
+						<header id="Astar">
+							<span class="date">Mar - May 2023</span>
+							<h2>Implemented Path Planning algorithms for Non-Holonomic Constraints<br />
+							</a></h2>
+						</header>
+						<p> This project focus on implementing the differential drive contstraints for planning algorithms. Implemented A* algorithm and simulated on Turtlebot3 using ROS1 and Gazebo.</p>
+						<ul>
+							<li>Used concept of Dubian Curves and accordingly chose action sets to simulate the motion of robot as a car moving forward.</li>
+							<li>Implemented A* search algorithm from scratch in Python. Also tested weighted A* and Dijkstra's for comparitive study.</li>
+							<li>Implemented a ROS1 node to test the results using a turtlebot3 in Gazebo environment.</li>
+						</ul>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/astar_turtlebot_ros_noetic.git" target="_blank" class="button large">View Project</a></li>
+							<li><a href="https://www.youtube.com/watch?v=9bkgCtHp0WE" target="_blank" class="button large">View Simulation</a></li>
+						</ul>
+					</article>
+					<hr>
+					<article>
 						<header id="Kuka">
-							<span class="date">December 2022</span>
+							<span class="date">Nov - Dec 2022</span>
 							<h2>KUKA LBR iiwa R820 Robot Modeling<br />
 							</a></h2>
 						</header>
@@ -78,12 +209,14 @@
 						</ul>
 						
 						<ul class="actions special">
+							<li><a href="project_reports/Project2_report_sparab_vsingh03_ENPM662.pdf" target="_blank" class="button large">Project Report</a></li>
 							<li><a href="https://github.com/VKSingh03/Kuka_robot_LBR_iiwa.git" target="_blank" class="button large">View Project</a></li>
 						</ul>
 					</article>
+					<hr>
 					<article>
 						<header id="turtlebot_ros2">
-							<span class="date">December 2022</span>
+							<span class="date">Nov - Dec 2022</span>
 							<h2>Turtlebot control, TF transforms and Camera in ROS2<br />
 							</a></h2>
 						</header>
@@ -102,6 +235,7 @@
 							<li><a href="https://youtu.be/Wf4jgUjjwj8" target="_blank" class="button">Simulation Video</a></li>
 						</ul>
 					</article>
+					<hr>
 					<article>
 						<header id="lqr_lqg">
 							<span class="date">December 2022</span>
@@ -124,6 +258,7 @@
 							<li><a href="https://github.com/VKSingh03/LQR-and-LQG-controller-design" target="_blank" class="button">View Project</a></li>
 						</ul>
 					</article>
+					<hr>
 					<article>
 						<header id="adaptive_control">
 							<span class="date">November 2022</span>
@@ -144,6 +279,7 @@
 							<li><a href="https://github.com/VKSingh03/Adaptive-Control-of-Time-Varying-Parameter-Systems-With-Asymptotic-Tracking" target="_blank" class="button">View Project</a></li>
 						</ul>
 					</article>
+					<hr>
 					<article>
 						<header id="toy_car">
 							<span class="date">October 2022</span>
@@ -165,6 +301,7 @@
 							<li><a href="https://youtu.be/p3Kq7AhRVoQ" target="_blank" class="button">Simulation Video</a></li>
 						</ul>
 					</article>
+					<hr>
 					<article>
 						<header id="sae">
 							<span class="date">April 2019</span>
@@ -194,6 +331,7 @@
 							<li><a href="photo_gallery.html" target="_blank" class="button">Photo Gallary</a></li>
 						</ul> 
 					</article>
+					<hr>
 					<article>
 						<header id="ojass">
 							<span class="date">April 2018</span>
@@ -235,10 +373,50 @@
 							<li><a href="photo_gallery.html" target="_blank" class="button">Photo Gallary</a></li>
 						</ul>
 					</article>
-
+					<hr>
 					</div>
-
 				
+		
+					
+					<!-- <article>
+						<header>
+							<span class="date">March 2023</span>
+							<h2><a href="generic.html">Camera Calibration, Image transformation and projection<br />
+							</a></h2>
+						</header>
+						<a href="generic.html/Kuka" class="image main"><img src="images/Stitching1_2.png" alt="" /></a>
+						<p> A combination of projects implementing Camera calibration, homography and Hough transform techniques</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Hough-Transform-and-Homography-.git" target="_blank" class="button large">Calibration Project</a></li>
+							<li><a href="https://github.com/VKSingh03/Hough-Transform-and-Homography-.git" target="_blank" class="button large">Homography Project</a></li>
+						</ul>
+					</article> -->
+					<!-- <article>
+						<header>
+							<span class="date">February 2023</span>
+							<h2><a href="generic.html">Trajectory Tracking and 3D Plane Fitting<br />
+							</a></h2>
+						</header>
+						<a href="generic.html" class="image main"><img src="images/ransac.png" alt="" /></a>
+						<p> Implemented trajectory tracking on a moving object in a video using classical computer vision techniques. Also implemented trajectory curve fitting</p> 
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Trajectory-tracking-and-3D-plane-fitting.git" target="_blank" class="button large">View Project</a></li>
+						</ul>
+					</article> -->
+					<!-- <article>
+						<header>
+							<span class="date">December 2022</span>
+							<h2><a href="generic.html">KUKA LBR iiwa R820 Robot Modeling<br />
+							</a></h2>
+						</header>
+						<a href="generic.html/Kuka" class="image main"><img src="images/662_final.png" alt="" /></a>
+						<p> In this project, a model based on KUKA LBR iiwa R820 is created in SOLIDWORKS and simulated using ROS Noetic and Gazebo</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/VKSingh03/Kuka_robot_LBR_iiwa.git" target="_blank" class="button large">View Project</a></li>
+						</ul>
+					</article> -->
+					
+					
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -246,7 +424,7 @@
 							<section class="alt">
 								<h3>Location</h3>
 								<p>College Park<br />
-								Maryland, USA 20783</p>
+								Maryland, USA 20740</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
@@ -254,14 +432,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="">vsingh03@umd.edu</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/vineet-kumar-singh-341a68174/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/VKSingh03" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<p><a href="">vineetvks360@gmail.com</a></p>
 							</section>
 						</section>
 					</footer>
@@ -276,6 +447,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+	
 
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					const imageContainer = document.querySelector('.image-container');
+					const images = imageContainer.querySelectorAll('img');
+					let currentIndex = 0;
+				
+					function scrollImages() {
+						currentIndex++;
+						if (currentIndex >= images.length) {
+							currentIndex = 0;
+						}
+						const offset = -currentIndex * 300; // Adjust according to the container's height/width
+						imageContainer.style.transform = `translateY(${offset}px)`;
+					}
+				
+					setInterval(scrollImages, 2000); // Change image every 2 seconds
+				});
+			</script>
+				
 	</body>
 </html>
